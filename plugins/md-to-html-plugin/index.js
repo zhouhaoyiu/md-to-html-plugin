@@ -19,18 +19,17 @@ class MdToHtmlPlugin {
       const _templateHTML = readFileSync(resolve(__dirname, 'template.html'), 'utf8')
       const _mdContentArr = _mdContent.split('\r\n')
       const _htmlStr = compilerHTML(_mdContentArr)
-      // console.log(_htmlStr)
-        const _finalHTML = _templateHTML.replace(INNER_MARK, _htmlStr)
+      const _finalHTML = _templateHTML.replace(INNER_MARK, _htmlStr)
 
-        _assets[this.filename] = {
-          source() {
-            return _finalHTML
-          },
+      _assets[this.filename] = {
+        source() {
+          return _finalHTML
+        },
 
-          size() {
-            return _finalHTML.length
-          }
+        size() {
+          return _finalHTML.length
         }
+      }
     })
   }
 }

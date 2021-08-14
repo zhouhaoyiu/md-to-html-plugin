@@ -15,6 +15,7 @@ function createTree(mdArr) {
 
     if (matched) {
       const mark = matched[1]
+      console.log(mark)
       const input = matched['input']
 
       if (reg_sharp.test(mark)) {
