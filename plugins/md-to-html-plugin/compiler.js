@@ -31,7 +31,7 @@ const reg_simple_code = /`(.+?)`/g // 匹配简单的代码块
  * @param {string} reg_img 当前节点的类型
  */
 
- 
+
 //       # 这是一个h1的标题
 
 //       - 这是UL列表第1项
@@ -152,7 +152,6 @@ function createTree(mdArr) {
       const tag = `img`
       const tagContent = imgSrc
 
-      if()
       _htmlPool[`img-${_key}`] = {
         type: 'single',
         tags: [`<p><${tag} src="${tagContent}"></p>`]
@@ -195,7 +194,7 @@ function compilerHTML(_mdArr) {
         _htmlStr += tag
       })
     } else if (item.type === 'wrap') {
-      let _list = `<${k.split('-')[0]}>`
+      let _list = `<${k.split('-')[0]}>` // ul, ol
 
       item.tags.forEach((tag) => {
         _list += tag
