@@ -1,9 +1,11 @@
-# 1、markdown文件
+# description of the plugin
 
-# 2、template模板 HTML
+## 1、markdown 文件
 
-# 3、markdown ->HTML标签
+## 2、template 模板 HTML
 
-# 4、HTML标签替换掉template内部<!-- inner -->
+## 3、markdown ->HTML 标签
 
-# 5、webpack打包
+## 4、HTML 标签替换掉 template 内部的```<!-- inner -->```
+
+## 5、webpack 打包
